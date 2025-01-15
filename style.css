@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Align image to the top */
+    overflow: auto;           /* Allow scrolling if the image exceeds the viewport */
+  }
+  
+  img {
+    position: absolute;      /* Allow image to be positioned outside of normal document flow */
+    top: 200px;              /* Push the image 200px from the top */
+    width: 100vw;            /* Make the image fill the viewport width */
+    height: auto;            /* Let the image height adjust proportionally */
+    max-height: none;        /* Allow the image height to exceed the viewport height */
+    object-fit: cover;       /* Ensure the image covers the area, cropping if necessary */
+  }
+  
