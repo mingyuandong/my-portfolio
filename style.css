@@ -9,8 +9,8 @@ html, body {
   
   img {
     position: absolute;      /* Allow image to be positioned outside of normal document flow */
-    top: 200px;              /* Push the image 200px from the top */
-    width: 100vw;            /* Make the image fill the viewport width */
+    top: 400px;              /* Push the image 200px from the top */
+    width: 80vw;            /* Make the image fill the viewport width */
     height: auto;            /* Let the image height adjust proportionally */
     max-height: none;        /* Allow the image height to exceed the viewport height */
     object-fit: cover;       /* Ensure the image covers the area, cropping if necessary */
