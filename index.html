@@ -5,10 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ming's Portfolio</title>
     <link rel="stylesheet" href="style.css">  <!-- Link to the external CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    Ming Portfolio
-    <img src="image/Frame 16.png" alt="Description of Image" />
+    <!-- White Box Header with Text -->
+    <div class="header">
+        <span class="header-text">DONG MingYuan</span>
+    </div>
+
+    <!-- Table of Content Stripe with Buttons -->
+    <div class="table-of-content-stripe">
+        <a href="about.html" id="aboutLink">
+            <button class="button" onclick="reloadPage(event)">About</button>
+        </a>
+    
+        <script>
+            function reloadPage(event) {
+                // Prevent the default link behavior
+                event.preventDefault();
+                // Reload the current page
+                window.location.reload();
+            }
+        </script>
+
+        <a href="Project 1/index.html">
+            <button class="button">Project 1</button>
+        </a>
+
+        <a href="Project 2/index.html">
+            <button class="button">Project 2</button>
+        </a>
+
+        <a href="Project 3/index.html">
+            <button class="button">Project 3</button>
+        </a>
+
+        <a href="Project 4/index.html">
+            <button class="button">Project 4</button>
+        </a>
+
+        <a href="Project 5/index.html">
+            <button class="button">Project 5</button>
+        </a>
+
+        <a href="Project 6/index.html">
+            <button class="button">Project 6</button>
+        </a>
+    </div>
+
+    <img src="image/About Header.png" alt = About-Header class="First-Picture" /> 
+
+
+    <div class="about-container">
+        <img src="image/My Photo.jpg" alt="Mingyuan-Dong" class="Ming-Photo" />
+        <div class="text-container">
+            Hey there,
+            <br>
+            This is Ming, and I am an industrial designer. I enjoy doing
+            great design work with everyone around me. I particularly design
+            good designs.
+        </div>
+    </div>
+
 </body>
 </html>

@@ -1,18 +1,91 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;  /* Align image to the top */
-    overflow: auto;           /* Allow scrolling if the image exceeds the viewport */
-  }
-  
-  img {
-    position: absolute;      /* Allow image to be positioned outside of normal document flow */
-    top: 400px;              /* Push the image 200px from the top */
-    width: 80vw;            /* Make the image fill the viewport width */
-    height: auto;            /* Let the image height adjust proportionally */
-    max-height: none;        /* Allow the image height to exceed the viewport height */
-    object-fit: cover;       /* Ensure the image covers the area, cropping if necessary */
-  }
-  
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.header {
+  position: relative;    /* Changed from absolute */
+  width: 100vw;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;           /* Higher than default but lower than stripe when scrolling */
+  padding: 60px 60px;
+}
+
+.header-text {
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-family: 'Lexend Peta', sans-serif;
+  text-align: left;
+  margin-left: 50 px
+}
+
+.table-of-content-stripe {
+  position: sticky;     /* Changed to sticky */
+  top: 0;              /* Stick to top when scrolling */
+  width: 100vw;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;          /* Higher than header when scrolling */
+  margin-top: 0;       /* Remove margin since we're using sticky */
+}
+
+.button {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 40px;
+  font-size: 20px;
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(147, 190, 240);
+}
+
+.First-Picture {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+p {
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+
+.about-container {
+  display: flex;
+  gap: 50px;
+  margin-left: 50px;
+  margin-top: 80px;  
+  align-items: flex-start;
+}
+
+.Ming-Photo {
+  width: 20vw;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.text-container {
+  width: 400px;
+  flex-shrink: 0;
+}
