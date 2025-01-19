@@ -68,24 +68,3 @@ p {
   text-align: center;
   width: 100%;
 }
-
-
-.about-container {
-  display: flex;
-  gap: 50px;
-  margin-left: 50px;
-  margin-top: 80px;  
-  align-items: flex-start;
-}
-
-.Ming-Photo {
-  width: 20vw;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-.text-container {
-  width: 400px;
-  flex-shrink: 0;
-}
