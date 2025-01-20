@@ -116,3 +116,29 @@ p {
         margin: 15px 0;
     }
 }
+
+@media (max-width: 768px) {
+  .table-of-content-stripe {
+      height: 0px;
+  }
+  .button{
+      left: 0px;
+  }
+  .table-of-content-stripe {
+      position: relative;
+  }
+  .button{
+      font-size: 12px;
+  }
+  .links.active {
+      transform: translateX(0);
+  }
+
+  .links li {
+      margin: 15px 0;
+  }
+
+  .project-text{
+    font-size: 10px;
+}
+}
