@@ -1,52 +1,52 @@
 .table-of-content-stripe {
-  position: sticky;     /* Changed to sticky */
-  top: 0;              /* Stick to top when scrolling */
-  width: 100vw;
-  height: 80px;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;          /* Higher than header when scrolling */
-  margin-top: 0;       /* Remove margin since we're using sticky */
-}
+    position: sticky;     /* Changed to sticky */
+    top: 0;              /* Stick to top when scrolling */
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;          /* Higher than header when scrolling */
+    margin-top: 0;       /* Remove margin since we're using sticky */
+  }
+  
+  .button {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: rgb(147, 190, 240);
+  }
 
-.button {
-  background-color: white;
-  color: rgb(0, 0, 0);
-  border: none;
-  padding: 10px 40px;
-  font-size: 20px;
-  font-family: "Outfit", serif;
-  font-weight: 400;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: rgb(147, 190, 240);
-}
-
-.project-text {
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  font-family: "Outfit", serif;
-  text-align: center;
-}
-
-img {
-  width: 100vw;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-p {
-  margin-top: 20px;
-  text-align: center;
-  width: 100%;
-}
-.link-button {
+  .project-text {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: "Outfit", serif;
+    text-align: center;
+  }
+  
+  img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  p {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .link-button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   border: none;
@@ -67,7 +67,7 @@ p {
 }
 
 .dropdown-content {
-    top: 70%;
+    top: 80%;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -118,15 +118,10 @@ p {
 }
 
 @media (max-width: 768px) {
-  .table-of-content-stripe {
-      height: 0px;
-  }
   .button{
       left: 0px;
   }
-  .table-of-content-stripe {
-      position: relative;
-  }
+
   .button{
       font-size: 12px;
   }
@@ -139,6 +134,10 @@ p {
   }
 
   .project-text{
-    font-size: 10px;
-}
+        font-size: 10px;
+    }
+  .dropdown-content{
+    top: 60px;
+    min-width: 123px;
+  }
 }

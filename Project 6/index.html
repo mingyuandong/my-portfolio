@@ -4,73 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
-    <link rel="stylesheet" href="style.css">  <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../style-projects.css">  <!-- Link to the external CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Table of Content Stripe with Buttons -->
-    <div class="table-of-content-stripe">
-    <div class="links">
-        <a href="../index.html" id="aboutLink"><button class="button">About</button></a>
-        <script>
-            function reloadPage(event) {
-                // Prevent the default link behavior
-                event.preventDefault();
-                // Reload the current page
-                window.location.reload();
-            }
-            var drop_downed = false;
-            function btn_onclick(){
-                if (drop_downed) document.getElementById('drop_down_1').style.display = 'block';
-                else document.getElementById('drop_down_1').style.display = 'none';
-                drop_downed = !drop_downed;
-            }
-        </script>
-        <li class="dropdown">
-            <a class="dropbtn"><button id="drop_down_1_btn" class="button" onclick="btn_onclick()">Projects</button></a>
-            <div class="dropdown-content" id="drop_down_1">
-                <a href="../Project 1/index.html" class="project-text">
-                    Attentà Mouse
-                </a>
+<!-- Table of Content Stripe with Buttons -->
+<div class="table-of-content-stripe">
+<div class="links" style="background-color: #FFFFFF; width:100%; text-align: center;">
+    <a href="../index.html" id="aboutLink"><button class="button">About</button></a>
+    <script>
+        function reloadPage(event) {
+            // Prevent the default link behavior
+            event.preventDefault();
+            // Reload the current page
+            window.location.reload();
+        }
+        var drop_downed = false;
+        function btn_onclick(){
+            if (drop_downed) document.getElementById('drop_down_1').style.display = 'block';
+            else document.getElementById('drop_down_1').style.display = 'none';
+            drop_downed = !drop_downed;
+        }
+    </script>
+    <li class="dropdown">
+        <a class="dropbtn">
+            <button id="drop_down_1_btn" class="button" onclick="btn_onclick()">Projects</button>
+        </a>
+        <div class="dropdown-content" id="drop_down_1">
+            <a href="../Project 1/index.html" class="project-text">
+                Attentà Mouse
+            </a>
+            <a href="../Project 2/index.html" class="project-text">
+                E-Lamp
+            </a>
 
-                <a href="../Project 2/index.html" class="project-text">
-                    E-Lamp
-                </a>
+            <a href="../Project 3/index.html" class="project-text">
+                Womb Wave
+            </a>
 
-                <a href="../Project 3/index.html" class="project-text">
-                    Womb Wave
-                </a>
+            <a href="../Project 4/index.html" class="project-text">
+                Smart Whisk
+            </a>
 
-                <a href="../Project 4/index.html" class="project-text">
-                    Smart Whisk
-                </a>
+            <a href="../Project 5/index.html" class="project-text">
+                Dose Drop
+            </a>
 
-                <a href="../Project 5/index.html" class="project-text">
-                    Dose Drop
-                </a>
+            <a href="../Project 6/index.html" class="project-text">
+                NeuCar
+            </a>
+        </div>
+    </li>
 
-                <a href="../Project 6/index.html" class="project-text">
-                    NeuCar
-                </a>
-                </a>
-            </div>
-        </li>
+    <a href="../Contact/index.html" id="contactLink">
+        <button class="button">Contact</button>
+    </a>
 
-        <a href="../Contact/index.html" id="contactLink"><button class="button" onclick="btn_onclick()">Contact</button></a>
-        
-    </div>
 </div>
+    </div>
 
-    <img src="image/NeuCar.png" alt="NeuCar">
+<img src="image/NeuCar.png" alt="NeuCar">
 
-    <p>
-       MingYuan Dong | All rights reserved.
-    </p>
+<p>
+    MingYuan Dong | All rights reserved.
+</p>
 
 </body>
 </html>
