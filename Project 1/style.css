@@ -67,7 +67,7 @@
 }
 
 .dropdown-content {
-    top: 70%;
+    top: 80%;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -139,6 +139,10 @@
   }
 
   .project-text{
-    font-size: 10px;
-}
+        font-size: 10px;
+    }
+  .dropdown-content{
+    top: 15px;
+    min-width: 123px;
+  }
 }

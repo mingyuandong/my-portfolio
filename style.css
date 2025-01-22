@@ -113,7 +113,7 @@ p {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 153px;
+    min-width: 123px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 10;
 }
@@ -181,6 +181,10 @@ p {
   }
 
   .project-text{
-    font-size: 10px;
-}
+        font-size: 10px;
+    }
+  .dropdown-content{
+    top: 15px;
+    min-width: 123px;
+  }
 }
