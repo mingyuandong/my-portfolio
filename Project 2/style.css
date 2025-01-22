@@ -93,6 +93,21 @@ p {
 }
 
 
+.video-container {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;      /* Spacing from elements above */
+  margin-bottom: 80px;   /* Spacing from elements below */
+  display: flex;         /* Add this */
+  justify-content: center; /* Add this */
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 @media (max-width: 768px) {
