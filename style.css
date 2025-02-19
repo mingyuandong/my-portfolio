@@ -141,14 +141,14 @@ p {
 
 
 
-
-
 /* Project Buttons Section */
 .project-buttons {
   display: flex;
   justify-content: center;
   gap: 20px; /* 40px space between buttons */
   margin-top: 20px; /* Adjust as needed */
+  margin-left: 100 px;
+  margin-right: 100 px;
 }
 
 .image-container {
