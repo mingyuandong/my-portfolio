@@ -170,7 +170,7 @@ p {
 }
 
 .overlay:hover {
-  background-color: rgba(0, 0, 255, 0.5); /* 50% transparent blue on hover */
+  background-color: rgb(147, 190, 240, 0.5); /* 50% transparent blue on hover */
 }
 
 .project-button-text {
