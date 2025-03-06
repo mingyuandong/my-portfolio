@@ -133,20 +133,33 @@ p {
   display: block;
 }
 
-/* Project Buttons Section */
-.project-buttons {
+
+/* Project Container */
+.project-container {
   display: flex;
-  justify-content: center;
-  gap: 20px; /* 20px space between buttons */
-  margin-top: 20px; /* Adjust as needed */
-  margin-left: 100px; /* Fixed typo: removed space between 100 and px */
-  margin-right: 100px; /* Fixed typo: removed space between 100 and px */
+  flex-direction: column;
+  gap: 20px; /* Space between rows */
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Project Row */
+.project-row {
+  display: flex;
+  justify-content: space-between; /* Distribute space between buttons */
+  gap: 20px; /* Space between buttons */
+}
+
+/* Project Buttons */
+.project-buttons {
+  flex: 1; /* Distribute available space equally */
+  max-width: calc(33.33% - 20px); /* Ensure 3 buttons fit in one row */
 }
 
 .image-container {
   position: relative;
   width: 100%;
-  max-width: 500px; /* Adjust as needed */
   height: auto;
 }
 
@@ -164,13 +177,14 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
   display: flex;
+  flex-direction: column; /* Stack text vertically */
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s;
 }
 
 .overlay:hover {
-  background-color: rgb(147, 190, 240, 0.5); /* 50% transparent blue on hover */
+  background-color: rgba(147, 190, 240, 0.5); /* 50% transparent blue on hover */
 }
 
 .project-button-text {
@@ -178,6 +192,17 @@ p {
   font-size: 24px;
   font-family: 'Outfit', sans-serif;
   text-align: center;
+}
+
+.project-button-subtitle {
+  color: white;
+  font-size: 14px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  width: 80%; /* Adjust as needed */
+  margin-top: 10px; /* Space between title and subtitle */
 }
 
 /* Introduction Text */

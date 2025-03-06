@@ -109,55 +109,53 @@ p {
   display: block;
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .header {
-        height: 0px;
-    }
-    .header-text{
-        left: 0px;
-    }
-    .header {
-        position: relative;
-    }
-    .header-text{
-        font-size: 30px;
-    }
-    .links.active {
-        transform: translateX(0);
-    }
+  .project-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust spacing for smaller screens */
+    margin-left: 20px; /* Adjusted margin for smaller screens */
+    margin-right: 20px; /* Adjusted margin for smaller screens */
+  }
 
-    .links li {
-        margin: 15px 0;
-    }
-}
+  .image-container {
+    max-width: 100%; /* Full width on smaller screens */
+  }
 
-@media (max-width: 768px) {
+  .project-button-text {
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
+
+  .introduction {
+    margin-left: 20px; /* Adjusted margin for smaller screens */
+    margin-right: 20px; /* Adjusted margin for smaller screens */
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+
+  .header {
+    height: auto; /* Adjusted height for smaller screens */
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .header-text {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    margin-left: 0; /* Adjusted margin for smaller screens */
+  }
+
   .table-of-content-stripe {
-      height: 0px;
-  }
-  .button{
-      left: 0px;
-  }
-  .table-of-content-stripe {
-      position: relative;
-  }
-  .button{
-      font-size: 12px;
-  }
-  .links.active {
-      transform: translateX(0);
+    height: auto; /* Adjusted height for smaller screens */
+    flex-direction: column; /* Stack buttons vertically */
+    padding: 10px; /* Adjusted padding for smaller screens */
   }
 
-  .links li {
-      margin: 15px 0;
+  .button {
+    padding: 8px 16px; /* Adjusted padding for smaller screens */
+    font-size: 14px; /* Adjusted font size for smaller screens */
   }
 
-  .project-text{
-        font-size: 10px;
-    }
-  .dropdown-content{
-    top: 15px;
-    min-width: 123px;
+  .link-button {
+    padding: 10px 20px; /* Adjusted padding for smaller screens */
+    font-size: 14px; /* Adjusted font size for smaller screens */
   }
 }
