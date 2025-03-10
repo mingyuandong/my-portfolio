@@ -22,12 +22,15 @@
     <div class="links">
         <a href="index.html" id="homeLink"><button class="button">Home</button></a>
         <script>
+            // Function to reload the page
             function reloadPage(event) {
-                // Prevent the default link behavior
-                event.preventDefault();
-                // Reload the current page
-                window.location.reload();
+                event.preventDefault(); // Prevent the default link behavior
+                window.location.reload(); // Reload the current page
             }
+    
+            // Attach the reloadPage function to the homeLink
+            document.getElementById('homeLink').addEventListener('click', reloadPage);
+    
             var drop_downed = false;
             function btn_onclick(){
                 if (drop_downed) document.getElementById('drop_down_1').style.display = 'block';
@@ -36,6 +39,7 @@
             }
         </script>
 
+        
         <li class="dropdown">
             <a class="dropbtn"><button id="drop_down_1_btn" class="button" onclick="btn_onclick()">Projects</button></a>
             <div class="dropdown-content" id="drop_down_1">
@@ -188,7 +192,7 @@
 </div>
 
 
-<!-- CV Stripe with Buttons -->
+<!-- Resume Stripe with Buttons -->
 <div class="table-of-content-stripe-2">
 
     <a href="https://drive.google.com/drive/folders/1AslxuBro6YyJdAVWNRm4Lc11fPyw8S9t?usp=sharing">
