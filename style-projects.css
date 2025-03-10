@@ -27,6 +27,13 @@
     background-color: rgb(147, 190, 240);
   }
 
+  .project-title {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: "Outfit", serif;
+    text-align: center;
+  }
+  
   .project-text {
     color: rgb(0, 0, 0);
     font-size: 16px;

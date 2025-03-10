@@ -16,7 +16,7 @@ html, body {
   justify-content: center;
   align-items: center;
   z-index: 1;           /* Higher than default but lower than stripe when scrolling */
-  padding: 60px 60px;
+  padding: 40px 40px;
 }
 
 .header-text {
