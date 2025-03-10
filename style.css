@@ -208,6 +208,8 @@ p {
   font-size: 24px;
   font-family: 'Outfit', sans-serif;
   text-align: center;
+  margin: 0; /* Remove default margin */
+  padding: 0 10px; /* Add padding to prevent text overflow */
 }
 
 .project-button-subtitle {
@@ -219,6 +221,7 @@ p {
   text-align: center;
   width: 80%; /* Adjust as needed */
   margin-top: 10px; /* Space between title and subtitle */
+  padding: 0 10px; /* Add padding to prevent text overflow */
 }
 
 /* Introduction Text */
