@@ -38,6 +38,7 @@ html, body {
   align-items: center;
   z-index: 2;          /* Higher than header when scrolling */
   margin-top: 0;       /* Remove margin since we're using sticky */
+  padding: 0;
 }
 
 .table-of-content-stripe-2 {
@@ -67,6 +68,13 @@ html, body {
   background-color: rgb(147, 190, 240);
 }
 
+.project-title {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "Outfit", serif;
+  text-align: center;
+}
+
 .project-text {
   color: rgb(0, 0, 0);
   font-size: 16px;
@@ -75,6 +83,13 @@ html, body {
 }
 
 .First-Picture {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+img {
   width: 100vw;
   height: auto;
   object-fit: cover;
@@ -218,6 +233,15 @@ p {
   color: black;
 }
 
+.contact-text {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "Outfit", serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .project-buttons {
@@ -248,7 +272,7 @@ p {
   }
 
   .header-text {
-    font-size: 30px; /* Adjusted font size for smaller screens */
+    font-size: 18px; /* Adjusted font size for smaller screens */
     margin-left: 0; /* Adjusted margin for smaller screens */
   }
 
@@ -261,6 +285,24 @@ p {
   .button {
     padding: 8px 16px; /* Adjusted padding for smaller screens */
     font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .project-button-text {
+    color: white;
+    font-size: 9px;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+  }
+  
+  .project-button-subtitle {
+    color: white;
+    font-size: 7px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 80%; /* Adjust as needed */
+    margin-top: 10px; /* Space between title and subtitle */
   }
 
   .link-button {

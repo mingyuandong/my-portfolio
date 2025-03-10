@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css">  <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../style.css">  <!-- Link to the external CSS file -->
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 <body>
 <!-- White Box Header with Text -->
 <div class="header">
-    <span class="header-text">DONG MingYuan</span>
+    <span class="header-text">🤖🕹️DONG MingYuan👾🦾</span>
 </div>
 
 <!-- Table of Content Stripe with Buttons -->
@@ -23,13 +23,11 @@
         <a href="../index.html" id="homeLink"><button class="button">Home</button></a>
         <script>
             function reloadPage(event) {
-                // Prevent the default link behavior
                 event.preventDefault();
-                // Reload the current page
                 window.location.reload();
             }
             var drop_downed = false;
-            function btn_onclick(){
+            function btn_onclick() {
                 if (drop_downed) document.getElementById('drop_down_1').style.display = 'block';
                 else document.getElementById('drop_down_1').style.display = 'none';
                 drop_downed = !drop_downed;
@@ -80,24 +78,19 @@
 
     </div>
 </div>
+
 <p class="contact-text">
     Mingyuan Dong <br>
     <a href="mailto:mdong01@risd.edu">mdong01@risd.edu</a>
 </p>
 
-<!-- Contact Stripe with Buttons -->
 <div class="table-of-content-stripe-2">
-    <a href="https://www.linkedin.com/in/ming-yuan-dong/">
-        <link-button class="link-button">LinkedIn</button>
-    </a>
+    <a href="https://www.linkedin.com/in/ming-yuan-dong/" class="link-button">LinkedIn</a>
 </div>
 
 <div class="table-of-content-stripe-2">
-    <a href="https://www.instagram.com/mingyd.arts/">
-        <link-button class="link-button">Instagram</button>
-    </a>
+    <a href="https://www.instagram.com/mingyd.arts/" class="link-button">Instagram</a>
 </div>
-
 
 </body>
 </html>
