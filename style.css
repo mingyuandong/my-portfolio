@@ -295,6 +295,8 @@ p {
     font-size: 9px;
     font-family: 'Outfit', sans-serif;
     text-align: center;
+    margin: 0; /* Remove default margin */
+    padding: 0 0px; /* Add padding to prevent text overflow */
   }
   
   .project-button-subtitle {
@@ -304,8 +306,9 @@ p {
     font-weight: 300;
     letter-spacing: 0.5px;
     text-align: center;
-    width: 80%; /* Adjust as needed */
-    margin-top: 10px; /* Space between title and subtitle */
+    width: 60%; /* Adjust as needed */
+    margin: 0px; /* Space between title and subtitle */
+    padding: 0 0px; /* Add padding to prevent text overflow */
   }
 
   .link-button {
