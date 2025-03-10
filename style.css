@@ -196,6 +196,7 @@ p {
   flex-direction: column; /* Stack text vertically */
   justify-content: center;
   align-items: center;
+  text-align: center; /* Ensure text is centered */
   transition: background-color 0.3s;
 }
 
@@ -210,6 +211,7 @@ p {
   text-align: center;
   margin: 0; /* Remove default margin */
   padding: 0 10px; /* Add padding to prevent text overflow */
+  line-height: 1.2; /* Adjust line height for better readability */
 }
 
 .project-button-subtitle {
@@ -222,7 +224,9 @@ p {
   width: 80%; /* Adjust as needed */
   margin-top: 10px; /* Space between title and subtitle */
   padding: 0 10px; /* Add padding to prevent text overflow */
+  line-height: 1.2; /* Adjust line height for better readability */
 }
+
 
 /* Introduction Text */
 .introduction {
