@@ -251,72 +251,84 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Completely restructure project layout for mobile */
+  .project-container {
+    display: block; /* Change to block to remove flex properties */
+    width: 100vw;
+  }
+  
+  .project-row {
+    display: block; /* Change to block display instead of flex */
+    width: 100vw;
+  }
+  
   .project-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* Adjust spacing for smaller screens */
-    margin-left: 0; /* Adjusted margin for smaller screens */
-    margin-right: 0; /* Adjusted margin for smaller screens */
+    display: block; /* Ensure block display */
+    max-width: 100%; /* Full width */
+    width: 100vw; /* Explicitly set width to viewport width */
+    margin-bottom: 15px; /* Space between projects */
   }
-
+  
+  /* Ensure images take full viewport width */
+  .project-image {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  
   .image-container {
-    max-width: 100%; /* Full width on smaller screens */
+    width: 100vw;
+    display: block;
   }
-
+  
+  /* Fix for images potentially being constrained */
+  img {
+    max-width: 100vw;
+    width: 100vw;
+  }
+  
+  /* Make text more readable on mobile */
   .project-button-text {
-    font-size: 18px; /* Adjusted font size for smaller screens */
-  }
-
-  .introduction {
-    margin-left: 20px; /* Adjusted margin for smaller screens */
-    margin-right: 20px; /* Adjusted margin for smaller screens */
-    font-size: 16px; /* Adjusted font size for smaller screens */
-  }
-
-  .header {
-    height: auto; /* Adjusted height for smaller screens */
-    padding: 20px; /* Adjusted padding for smaller screens */
-  }
-
-  .header-text {
-    font-size: 18px; /* Adjusted font size for smaller screens */
-    margin-left: 0; /* Adjusted margin for smaller screens */
-  }
-
-  .table-of-content-stripe {
-    height: auto; /* Adjusted height for smaller screens */
-    flex-direction: column; /* Stack buttons vertically */
-    padding: 10px; /* Adjusted padding for smaller screens */
-  }
-
-  .button {
-    padding: 8px 16px; /* Adjusted padding for smaller screens */
-    font-size: 14px; /* Adjusted font size for smaller screens */
-  }
-
-  .project-button-text {
-    color: white;
-    font-size: 9px;
-    font-family: 'Outfit', sans-serif;
-    text-align: center;
-    margin: 0; /* Remove default margin */
-    padding: 0 0px; /* Add padding to prevent text overflow */
+    font-size: 18px;
+    width: 80%;
+    padding: 0 15px;
   }
   
   .project-button-subtitle {
-    color: white;
-    font-size: 7px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    text-align: center;
-    width: 60%; /* Adjust as needed */
-    margin: 0px; /* Space between title and subtitle */
-    padding: 0 0px; /* Add padding to prevent text overflow */
+    font-size: 14px;
+    width: 80%;
+    margin-top: 8px;
+    padding: 0 15px;
+  }
+
+  .introduction {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+
+  .header {
+    height: auto;
+    padding: 20px;
+  }
+
+  .header-text {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .table-of-content-stripe {
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 
   .link-button {
-    padding: 10px 20px; /* Adjusted padding for smaller screens */
-    font-size: 14px; /* Adjusted font size for smaller screens */
+    padding: 10px 20px;
+    font-size: 14px;
   }
 }
