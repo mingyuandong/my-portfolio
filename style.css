@@ -332,3 +332,35 @@ p {
     font-size: 14px;
   }
 }
+
+
+/* Voico */
+.two-horizontal-image-container {
+  display: flex;
+  justify-content: center; /* Center the whole block */
+  gap: 30px;               /* 10px gap between the images */
+}
+
+.two-horizontal-image-container img {
+  height: 480px;
+  width: auto;             /* Maintain aspect ratio */
+  display: block;
+  object-fit: contain;     /* Contain within height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .two-horizontal-image-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;              /* Remove side margins */
+    padding: 0;
+    gap: 0;                 /* No space between images */
+  }
+
+  .two-horizontal-image-container img {
+    width: 50%;             /* Each image takes half the width */
+    height: auto;           /* Let height adjust proportionally */
+    object-fit: cover;
+  }
+}
