@@ -355,12 +355,11 @@ p {
     flex-direction: row;
     margin: 0;              /* Remove side margins */
     padding: 0;
-    gap: 0;                 /* No space between images */
+    gap: 10px;                 /* No space between images */
   }
 
   .two-horizontal-image-container img {
-    width: 50%;             /* Each image takes half the width */
-    height: auto;           /* Let height adjust proportionally */
+    height: 150px;           /* Let height adjust proportionally */
     object-fit: cover;
   }
 }
