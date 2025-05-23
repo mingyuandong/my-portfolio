@@ -334,11 +334,11 @@ p {
 }
 
 
-/* Voico */
+/* Taskuarium, Voico */
 .two-horizontal-image-container {
   display: flex;
   justify-content: center; /* Center the whole block */
-  gap: 30px;               /* 10px gap between the images */
+  gap: 50px;               /* 10px gap between the images */
 }
 
 .two-horizontal-image-container img {
