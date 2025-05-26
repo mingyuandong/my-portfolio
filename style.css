@@ -231,8 +231,8 @@ p {
 /* Introduction Text */
 .introduction {
   margin-top: 10px; /* Adjust as needed */
-  margin-left: 135px;
-  margin-right:135px;
+  margin-left: 150px;
+  margin-right:150px;
   margin-bottom: 50px;
   text-align: left;
   font-family: 'Outfit', sans-serif;
@@ -338,11 +338,11 @@ p {
 .two-horizontal-image-container {
   display: flex;
   justify-content: center; /* Center the whole block */
-  gap: 50px;               /* 10px gap between the images */
+  gap: 30px;               /* 10px gap between the images */
 }
 
 .two-horizontal-image-container img {
-  height: 480px;
+  height: 360px;
   width: auto;             /* Maintain aspect ratio */
   display: block;
   object-fit: contain;     /* Contain within height */
