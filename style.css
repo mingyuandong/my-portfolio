@@ -52,6 +52,78 @@ html, body {
   margin-top: 0;       /* Remove margin since we're using sticky */
 }
 
+/* CSS CHANGES: ADD these new styles to your existing CSS (don't replace anything) */
+
+/* New styles for project cards */
+.project-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    background-color: rgba(147, 190, 240, 0.1);
+}
+
+.project-card:hover .project-image {
+    filter: brightness(0.8);
+}
+
+/* New container for text content below image */
+.project-content {
+    padding: 20px 15px;
+    text-align: center;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay-title,
+.overlay-text {
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+  padding: 0 10px;
+}
+.overlay-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.overlay-text {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
 .button {
   background-color: white;
   color: rgb(0, 0, 0);
@@ -185,57 +257,43 @@ p {
   display: block;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* 50% transparent black */
-  display: flex;
-  flex-direction: column; /* Stack text vertically */
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Ensure text is centered */
-  transition: background-color 0.3s;
-}
 
-.overlay:hover {
-  background-color: rgba(147, 190, 240, 0.5); /* 50% transparent blue on hover */
+.project-button-title {
+    color: black; /* Changed from white to black */
+    font-size: 24px; /* Slightly smaller */
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700; /* Make it bolder */
+    text-align: center;
+    margin: -5px 0 5px 0; /* Add bottom margin */
+    padding: 0 3px;
+    line-height: 1;
+    display: block; /* Make sure it displays as block */
 }
 
 .project-button-text {
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 2em;
-  font-size: 20px;
-  font-family: 'Outfit', sans-serif;
-  text-align: center;
-  margin: 0; /* Remove default margin */
-  padding: 0 10px; /* Add padding to prevent text overflow */
-  line-height: 1.2; /* Adjust line height for better readability */
-}
-
-.project-button-title {
-  color: white;
-  font-size: 36px;
-  font-family: 'Outfit', sans-serif;
-  text-align: center;
-  margin: 0; /* Remove default margin */
-  padding: 0 10px; /* Add padding to prevent text overflow */
-  line-height: 1.2; /* Adjust line height for better readability */
+    color: rgb(100, 100, 100); /* Changed from white/transparent to gray */
+    margin-top: 0; /* Remove top margin */
+    font-size: 16px; /* Slightly smaller */
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    margin: 0 0 5px 0; /* Add bottom margin */
+    padding: 0 5px;
+    line-height: 1;
+    display: block; /* Make sure it displays as block */
 }
 
 .project-button-subtitle {
-  color: rgba(255, 255, 255);
-  font-size: 14px;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  text-align: center;
-  width: 80%; /* Adjust as needed */
-  margin-top: 10px; /* Space between title and subtitle */
-  padding: 0 10px; /* Add padding to prevent text overflow */
-  line-height: 1.2; /* Adjust line height for better readability */
+    color: rgb(120, 120, 120); /* Changed from white to gray */
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 100%; /* Changed from 80% to 100% */
+    margin: 0; /* Remove top margin */
+    padding: 0 10px;
+    line-height: 1; /* Slightly increase for readability */
+    display: block; /* Make sure it displays as block */
 }
 
 
@@ -280,6 +338,11 @@ p {
     margin-bottom: 15px; /* Space between projects */
   }
   
+  /* Project content padding for mobile */
+  .project-content {
+    padding: 15px 20px;
+  }
+  
   /* Ensure images take full viewport width */
   .project-image {
     width: 100vw;
@@ -304,7 +367,7 @@ p {
     padding: 0 15px;
   }
   
-    .project-button-title {
+  .project-button-title {
     font-size: 26px;
     width: 80%;
     padding: 0 15px;
@@ -313,7 +376,8 @@ p {
   .project-button-subtitle {
     font-size: 14px;
     width: 80%;
-    margin-top: 8px;
+    margin-top: 1px;
+    margin-bottom: -15px;
     padding: 0 15px;
   }
 
@@ -350,15 +414,28 @@ p {
   }
 }
 
-
-/* Taskuarium, Voico */
-.two-horizontal-image-container {
+/* Voico */
+.voico-horizontal-image-container {
   display: flex;
   justify-content: center; /* Center the whole block */
   gap: 30px;               /* 10px gap between the images */
 }
 
-.two-horizontal-image-container img {
+.voico-horizontal-image-container img {
+  height: 360px;
+  width: auto;             /* Maintain aspect ratio */
+  display: block;
+  object-fit: contain;     /* Contain within height */
+}
+
+/* Taskuarium*/
+.taskuarium-horizontal-image-container {
+  display: flex;
+  justify-content: center; /* Center the whole block */
+  gap: 30px;               /* 10px gap between the images */
+}
+
+.taskuarium-horizontal-image-container img {
   height: 360px;
   width: auto;             /* Maintain aspect ratio */
   display: block;
@@ -367,7 +444,7 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .two-horizontal-image-container {
+  .taskuarium-horizontal-image-container {
     display: flex;
     flex-direction: row;
     margin: 0;              /* Remove side margins */
@@ -375,8 +452,21 @@ p {
     gap: 10px;                 /* No space between images */
   }
 
-  .two-horizontal-image-container img {
+  .taskuarium-horizontal-image-container img {
     height: 150px;           /* Let height adjust proportionally */
+    object-fit: cover;
+  }
+
+  .voico-horizontal-image-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;              /* Remove side margins */
+    padding: 0;
+    gap: 10px;                 /* No space between images */
+  }
+
+  .voico-horizontal-image-container img {
+    height: 110px;           /* Let height adjust proportionally */
     object-fit: cover;
   }
 }
