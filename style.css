@@ -70,19 +70,14 @@ html, body {
   background-color: rgba(147, 190, 240); /* light blue on entire card */
 }
 
-/* Dim the image on hover of the entire card */
-.project-card:hover .project-image {
-  opacity: 0.6; /* Dim the image */
-}
-
 
 /* New container for text content below image */
 .project-content {
-    padding: 20px 15px;
-    text-align: center;
-    background-color: inherit;
-    display: flex;
-    flex-direction: column;
+  padding: 20px 15px;
+  text-align: center;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
 }
 
 .overlay {
@@ -230,9 +225,7 @@ p {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  margin-left: 0; /* Remove left margin */
-  margin-right: 0; /* Remove right margin */
-  width: 100vw; /* Full viewport width */
+  width: 100vw;
 }
 
 /* Project Row */
@@ -240,15 +233,13 @@ p {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 5px; /* Optional spacing between rows */
+  margin-bottom: 5px;
 }
 
-
-/* Project Buttons */
 .project-buttons {
   flex: 1;
   max-width: 33.33%;
-  box-sizing: border-box; /* <-- Ensures padding doesn't break the layout */
+  box-sizing: border-box;
 }
 
 
@@ -256,55 +247,57 @@ p {
   position: relative;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .project-image {
   width: 95%;
   height: auto;
   display: block;
-  transition: filter 0.3s ease;
-  margin: 10px auto 0 auto; /* top, right, bottom, left */
+  margin: 10px auto 0 auto;
+  transition: all 0.3s ease;
 }
+
 
 
 
 .project-button-title {
-    color: black; /* Changed from white to black */
-    font-size: 24px; /* Slightly smaller */
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700; /* Make it bolder */
-    text-align: center;
-    margin: -5px 0 5px 0; /* Add bottom margin */
-    padding: 0 3px;
-    line-height: 1;
-    display: block; /* Make sure it displays as block */
+  color: black;
+  font-size: 24px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: -5px 0 5px 0;
+  padding: 0 3px;
+  line-height: 1;
+  display: block;
 }
 
 .project-button-text {
-    color: rgb(100, 100, 100); /* Changed from white/transparent to gray */
-    margin-top: 0; /* Remove top margin */
-    font-size: 16px; /* Slightly smaller */
-    font-family: 'Outfit', sans-serif;
-    text-align: center;
-    margin: 0 0 5px 0; /* Add bottom margin */
-    padding: 0 5px;
-    line-height: 1;
-    display: block; /* Make sure it displays as block */
+  color: rgb(100, 100, 100);
+  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+  margin: 0 0 5px 0;
+  padding: 0 5px;
+  line-height: 1;
+  display: block;
 }
 
 .project-button-subtitle {
-    color: rgb(120, 120, 120); /* Changed from white to gray */
-    font-size: 14px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    text-align: center;
-    width: 100%; /* Changed from 80% to 100% */
-    margin: 0; /* Remove top margin */
-    padding: 0 10px;
-    line-height: 1; /* Slightly increase for readability */
-    display: block; /* Make sure it displays as block */
+  color: rgb(120, 120, 120);
+  font-size: 14px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0 10px;
+  line-height: 1;
+  display: block;
 }
+
 
 
 /* Introduction Text */
