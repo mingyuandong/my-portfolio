@@ -78,6 +78,8 @@ html, body {
   background-color: inherit;
   display: flex;
   flex-direction: column;
+  align-items: center; /* Ensure content is centered horizontally */
+  justify-content: center; /* Ensure content is centered vertically */
 }
 
 .overlay {
@@ -271,6 +273,7 @@ p {
   padding: 0 3px;
   line-height: 1;
   display: block;
+  width: 100%;
 }
 
 .project-button-text {
@@ -282,6 +285,7 @@ p {
   padding: 0 5px;
   line-height: 1;
   display: block;
+  width: 100%;
 }
 
 .project-button-subtitle {
@@ -343,7 +347,13 @@ p {
   
   /* Project content padding for mobile */
   .project-content {
-    padding: 15px 20px;
+    padding: 15px 0; /* Reduced horizontal padding */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
   }
   
   /* Ensure images take full viewport width */
@@ -364,28 +374,31 @@ p {
   }
   
   .project-button-title {
-  font-size: 26px;
-  width: 100%;
-  padding: 0 15px;
-  text-align: center;
-  margin: 0 auto;
-}
+    font-size: 26px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto 5px auto;
+    display: block;
+  }
 
-.project-button-text {
-  font-size: 16px;
-  width: 100%;
-  padding: 0 15px;
-  text-align: center;
-  margin: 0 auto;
-}
+  .project-button-text {
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto 5px auto;
+    display: block;
+  }
 
-.project-button-subtitle {
-  font-size: 14px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 1px auto -15px auto; /* Keep your spacing tweak */
-  text-align: center;
-}
+  .project-button-subtitle {
+    font-size: 14px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
 
 
   .introduction {
