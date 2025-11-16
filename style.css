@@ -10,7 +10,7 @@ html, body {
 .header {
   position: relative;    /* Changed from absolute */
   width: 100vw;
-  height: 300px;
+  height: 280px;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -52,7 +52,28 @@ html, body {
   margin-top: 0;       /* Remove margin since we're using sticky */
 }
 
-/* CSS CHANGES: ADD these new styles to your existing CSS (don't replace anything) */
+
+.hook {
+  position: relative;    /* Changed from absolute */
+  width: 100vw;
+  height: 280px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  z-index: 1;           /* Higher than default but lower than stripe when scrolling */
+  padding: 20px 20px;
+  top: 10px;
+  bottom: 40px;
+}
+
+.hook-text {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-family: 'Outfit', sans-serif;
+  text-align: left;
+  margin-left: 50px; /* Fixed typo: removed space between 50 and px */
+}
 
 /* New styles for project cards */
 .project-card {
@@ -240,7 +261,7 @@ p {
 
 .project-buttons {
   flex: 1;
-  max-width: 33.33%;
+  max-width: 50%;
   box-sizing: border-box;
 }
 
@@ -306,10 +327,10 @@ p {
 
 /* Introduction Text */
 .introduction {
-  margin-top: 10px; /* Adjust as needed */
+  margin-top: -40px; /* Adjust as needed */
   margin-left: 150px;
   margin-right:150px;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   text-align: left;
   font-family: 'Outfit', sans-serif;
   font-size: 18px;
