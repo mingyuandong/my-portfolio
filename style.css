@@ -421,6 +421,13 @@ p {
     display: block;
   }
 
+  .hook {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
 
   .introduction {
     margin-left: 20px;
@@ -452,62 +459,5 @@ p {
   .link-button {
     padding: 10px 20px;
     font-size: 14px;
-  }
-}
-
-/* Voico */
-.voico-horizontal-image-container {
-  display: flex;
-  justify-content: center; /* Center the whole block */
-  gap: 30px;               /* 10px gap between the images */
-}
-
-.voico-horizontal-image-container img {
-  height: 360px;
-  width: auto;             /* Maintain aspect ratio */
-  display: block;
-  object-fit: contain;     /* Contain within height */
-}
-
-/* Taskuarium*/
-.taskuarium-horizontal-image-container {
-  display: flex;
-  justify-content: center; /* Center the whole block */
-  gap: 30px;               /* 10px gap between the images */
-}
-
-.taskuarium-horizontal-image-container img {
-  height: 360px;
-  width: auto;             /* Maintain aspect ratio */
-  display: block;
-  object-fit: contain;     /* Contain within height */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .taskuarium-horizontal-image-container {
-    display: flex;
-    flex-direction: row;
-    margin: 0;              /* Remove side margins */
-    padding: 0;
-    gap: 10px;                 /* No space between images */
-  }
-
-  .taskuarium-horizontal-image-container img {
-    height: 150px;           /* Let height adjust proportionally */
-    object-fit: cover;
-  }
-
-  .voico-horizontal-image-container {
-    display: flex;
-    flex-direction: row;
-    margin: 0;              /* Remove side margins */
-    padding: 0;
-    gap: 10px;                 /* No space between images */
-  }
-
-  .voico-horizontal-image-container img {
-    height: 110px;           /* Let height adjust proportionally */
-    object-fit: cover;
   }
 }
