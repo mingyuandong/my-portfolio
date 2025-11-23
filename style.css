@@ -323,7 +323,12 @@ p {
   display: block;
 }
 
-
+.bigtitle { /*same size as hook, just centered*/
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+}
 
 /* Introduction Text */
 .introduction {
@@ -430,6 +435,7 @@ p {
   }
 
   .introduction {
+    margin-top: -20px;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 16px;
