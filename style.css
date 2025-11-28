@@ -59,7 +59,7 @@ html, body {
   height: 280px;
   background-color: rgb(255, 255, 255);
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   z-index: 1;           /* Higher than default but lower than stripe when scrolling */
   padding: 20px 20px;
@@ -72,7 +72,6 @@ html, body {
   font-size: 30px;
   font-family: 'Outfit', sans-serif;
   text-align: left;
-  margin-left: 50px; /* Fixed typo: removed space between 50 and px */
 }
 
 /* New styles for project cards */
@@ -427,12 +426,31 @@ p {
   }
 
   .hook {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 18px;
+  position: relative;    /* Changed from absolute */
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;           /* Higher than default but lower than stripe when scrolling */
+  padding: 10px 10px;
+  top: 10px;
+  bottom: 20px;
   }
+  
+  .hook-text {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+  }
+
+  .bigtitle { /*same size as hook, just centered*/
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+}
 
   .introduction {
     margin-top: -20px;
