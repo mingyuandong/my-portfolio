@@ -434,6 +434,8 @@ p {
   align-items: center;
   z-index: 1;           /* Higher than default but lower than stripe when scrolling */
   padding: 20px 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   top: 10px;
   bottom: 10px;
   }
@@ -447,7 +449,7 @@ p {
 
   .bigtitle { /*same size as hook, just centered*/
   color: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 24px;
   font-family: 'Outfit', sans-serif;
   text-align: center;
 }
