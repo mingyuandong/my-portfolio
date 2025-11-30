@@ -149,8 +149,8 @@ html, body {
   background-color: white;
   color: rgb(0, 0, 0);
   border: none;
-  padding: 10px 20px; /* Adjusted padding for smaller screens */
-  font-size: 16px; /* Adjusted font size for smaller screens */
+  padding: 10px 10px; 
+  font-size: 16px; 
   font-family: "Outfit", serif;
   font-weight: 400;
   cursor: pointer;
@@ -273,7 +273,7 @@ p {
 }
 
 .project-image {
-  width: 95%;
+  width: 97%;
   height: auto;
   display: block;
   margin: 10px auto 0 auto;
