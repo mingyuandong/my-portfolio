@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ming's Art Portfolio Home</title>
+    <link rel="stylesheet" href="../style.css">  <!-- Link to the external CSS file -->
+    <script src="hover_script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- White Box Header with Text -->
+<div class="header">
+    <span class="header-text">MING</span>
+
+    <a href="../index.html" class="art-button">
+        Design <br/> Portfolio
+    </a>
+</div>
+
+<!-- Table of Content Stripe with Buttons -->
+<div class="table-of-content-stripe">
+    <div class="links">
+        <a href="../index.html" id="homeLink"><button class="button">Home</button></a>
+        <script>
+            // Function to reload the page
+            function reloadPage(event) {
+                event.preventDefault(); // Prevent the default link behavior
+                window.location.reload(); // Reload the current page
+            }
+    
+            // Attach the reloadPage function to the homeLink
+            document.getElementById('homeLink').addEventListener('click', reloadPage);
+    
+            var drop_downed = false;
+            function btn_onclick(){
+                if (drop_downed) document.getElementById('drop_down_1').style.display = 'block';
+                else document.getElementById('drop_down_1').style.display = 'none';
+                drop_downed = !drop_downed;
+            }
+        </script>
+
+        <a href="Work/index.html" id="workLink"><button class="button" onclick="btn_onclick()">Work</button></a>
+
+        <a href="About/index.html" id="aboutLink"><button class="button" onclick="btn_onclick()">About</button></a>
+
+        <a href="Contact/index.html" id="contactLink"><button class="button" onclick="btn_onclick()">Contact</button></a>
+
+    </div>
+</div>
+
+<img src="image/Home Page.jpg" alt=About-Honors class="First-Picture"/>
+
+<div class="hook">
+<span class="hook-text">Ming — 
+    <strong style="
+    color: rgb(0, 0, 0); 
+    font-weight: bold; 
+    ">
+    Mixed-Media Artist
+    </strong>
+based in Greenville, SC and     
+    <strong style="
+    color: rgb(0, 0, 0); 
+    font-weight: bold; 
+    ">
+    Designer
+    </strong>
+at RYOBI. </br>
+
+        <span style="color: rgb(0, 0, 0);">As a surrealist-maximalist, I create contemporary works using traditional Chinese materials.</span> <br/>
+        <span style="color: rgb(0, 0, 0);">BFA @ UC Berkeley '23, MID @ RISD '26</span>
+</div>
+
+
+<!-- This does nothing but has to stay so the CV button format is correct idk why ughhhhhh -->
+<div class="introduction">
+    <p>
+     
+    </p>
+    </div>
+
+
+<!-- CV Stripe with Buttons -->
+<div class="table-of-content-stripe-2">
+
+    <a href="https://docs.google.com/document/d/1fSX7M5kfJjqgEJCVH5YpVIoSqRoBxL5xxcAfFSqJowE/edit?usp=sharing">
+        <button class="link-button">CV</button>
+    </a>
+
+</div>
+
+
+<p>
+    MingYuan Dong | All rights reserved.
+ </p>
+
+</body>
+</html>
