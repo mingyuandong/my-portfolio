@@ -867,6 +867,63 @@ About
 
 
 
+
+
+
+
+
+Art Portfolio Specific
+Work
+ * { box-sizing: border-box; }
+  body {
+        height: 100%;
+  margin: 0;
+   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background: #fff;
+    color: #000;
+  }
+
+Work Intro
+.work-intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;      /* force this explicitly */
+  align-items: flex-start;
+  width: 90%;
+  box-sizing: border-box;
+  padding-left: 10px;   /* ensures the image is 80px from the left */
+}
+
+.work-intro-title {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+  .work-intro-text {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-family: 'Outfit', sans-serif;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 30px;  
+  padding-right: 20px;
+  padding-bottom: 10px; 
+}
+
+
+
+Single work
 .work-single-content {
   flex: 1; /* fills the remaining space next to the image */
 }
