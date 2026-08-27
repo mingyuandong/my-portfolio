@@ -455,7 +455,7 @@ p {
 
   .hook {
   position: relative;    /* Changed from absolute */
-  width: 100%;
+  width: 90%;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -831,7 +831,7 @@ About
   flex-direction: row;
   flex-wrap: nowrap;      /* force this explicitly */
   align-items: flex-start;
-  width: 100%;
+  width: 90%;
   box-sizing: border-box;
   padding-left: 10px;   /* ensures the image is 80px from the left */
   gap: 10px;            /* clean spacing between image and text */
@@ -863,3 +863,162 @@ About
   padding-right: 10px;
 }
 }
+
+
+
+
+.work-single-content {
+  flex: 1; /* fills the remaining space next to the image */
+}
+
+.work-single {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;      /* force this explicitly */
+  align-items: flex-start;
+  width: 90%;
+  box-sizing: border-box;
+  padding-left: 10px;   /* ensures the image is 80px from the left */
+  gap: 10px;            /* clean spacing between image and text */
+}
+
+  .work-single-image {
+  width: 30%;             /* reduced to make room for the margin */
+  margin-left: 10px;
+  margin-top: 10px;
+  flex-shrink: 0;
+}
+
+.work-single-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+
+.work-single-title-text {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-family: 'Outfit', sans-serif;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 10px;  
+  padding-right: 60px;
+  padding-top: 10px;
+}
+
+.work-single-description-text {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-family: 'Outfit', sans-serif;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 10px;  
+  padding-right: 60px;
+}
+
+
+  /* ===== Pair Work ===== */
+  .work-pair-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;      /* force this explicitly */
+    align-items: flex-start;
+    width: 90%;
+    box-sizing: border-box;
+    padding-left: 5px;   /* ensures the image is 80px from the left */
+    gap: 10px;    
+  }
+
+
+  .work-pair {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;   /* ensures the image is 80px from the left */
+  gap: 10px;     
+  }
+
+  .work-pair-image {
+    width: 60%;
+    flex-shrink: 0;
+  }
+  
+
+  .work-pair-image img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .work-pair-content {
+    flex: 1;
+  }
+
+  .work-pair-title-text {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+
+  .work-pair-description-text {
+    font-size: 12px;
+    padding-top: 8px;
+    padding-left: 5px;
+    line-height: 1.4;
+  }
+
+  /* ===== Triple Work ===== */
+  .work-triple {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  align-items: flex-start;
+  width: 80%;
+  box-sizing: border-box;
+  padding-left: 10px;   /* ensures the image is 80px from the left */
+  gap: 40px;   
+  }
+
+  .work-triple-title-text {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  .work-triple-description-text {
+    font-size: 12px;
+    padding-top: 6px;
+    line-height: 1.4;
+    padding-bottom: 20px;
+  }
+
+  /* ===== Quad Work ===== */
+  .work-quad {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  align-items: flex-start;
+  width: 90%;
+  box-sizing: border-box;
+  padding-left: 10px;   /* ensures the image is 80px from the left */
+  gap: 0px;   
+  }
+
+  .work-quad-title-text {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  .work-quad-description-text {
+    font-size: 12px;
+    padding-top: 6px;
+    line-height: 1.4;
+    padding-bottom: 10px;
+  }
