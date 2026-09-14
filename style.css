@@ -811,6 +811,73 @@ Work Intro
     padding-bottom: 20px;
   }
 
+
+  
+  /* ===== Image Zoom / Lightbox ===== */
+
+/* Show magnifying glass when hovering over portfolio images */
+.work-single-image img,
+.work-pair-image img,
+.work-triple-image img,
+.work-quad-image img {
+  cursor: zoom-in;
+}
+
+
+/* Full-screen background */
+.image-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.92);
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+
+/* The large image */
+.image-lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* X button */
+.image-lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+
+  cursor: pointer;
+  line-height: 1;
+
+  z-index: 10000;
+}
+
+
+/* Slight hover effect on X */
+.image-lightbox-close:hover {
+  opacity: 0.6;
+}
+
+
 About
 
 .about-content {

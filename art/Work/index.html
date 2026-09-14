@@ -11,6 +11,91 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* Find all portfolio images */
+  const images = document.querySelectorAll(
+    ".work-single-image img, " +
+    ".work-pair-image img, " +
+    ".work-triple-image img, " +
+    ".work-quad-image img"
+  );
+
+
+  /* Create the lightbox */
+  const lightbox = document.createElement("div");
+  lightbox.className = "image-lightbox";
+
+  lightbox.innerHTML = `
+    <div class="image-lightbox-close">&times;</div>
+    <img src="" alt="">
+  `;
+
+  document.body.appendChild(lightbox);
+
+
+  /* Get the large image and close button */
+  const lightboxImage = lightbox.querySelector("img");
+  const closeButton = lightbox.querySelector(".image-lightbox-close");
+
+
+  /* Open image when clicked */
+  images.forEach(function (image) {
+
+    image.addEventListener("click", function () {
+
+      lightboxImage.src = image.src;
+      lightboxImage.alt = image.alt;
+
+      lightbox.style.display = "flex";
+
+      document.body.style.overflow = "hidden";
+    });
+
+  });
+
+
+  /* Close when clicking X */
+  closeButton.addEventListener("click", function () {
+
+    lightbox.style.display = "none";
+
+    document.body.style.overflow = "";
+
+  });
+
+
+  /* Close when clicking outside the image */
+  lightbox.addEventListener("click", function (event) {
+
+    if (event.target === lightbox) {
+
+      lightbox.style.display = "none";
+
+      document.body.style.overflow = "";
+
+    }
+
+  });
+
+
+  /* Close with Escape key */
+  document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+
+      lightbox.style.display = "none";
+
+      document.body.style.overflow = "";
+
+    }
+
+  });
+
+});
+</script>
+
 
 <body>
 <!-- Table of Content Stripe with Buttons -->
